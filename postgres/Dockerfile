@@ -7,7 +7,7 @@ COPY ./tsearch_data /usr/local/share/postgresql/tsearch_data
 ADD https://github.com/postgrespro/pg_tsparser/archive/master.zip /home
 
 RUN apk add --no-cache --virtual .build-deps \
-		gcc \
+    gcc \
     make \
     libc-dev \
     icu-dev \
